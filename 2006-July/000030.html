@@ -1,0 +1,133 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Cctools-i18n] ccPublisher in Dutch
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/cctools-i18n/2006-July/index.html" >
+   <LINK REL="made" HREF="mailto:cctools-i18n%40lists.berlios.de?Subject=Re%3A%20%5BCctools-i18n%5D%20ccPublisher%20in%20Dutch&In-Reply-To=%3C44C51BA3.6000402%40creativecommons.org%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000031.html">
+   <LINK REL="Next"  HREF="000032.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Cctools-i18n] ccPublisher in Dutch</H1>
+    <B>Nathan R. Yergler</B> 
+    <A HREF="mailto:cctools-i18n%40lists.berlios.de?Subject=Re%3A%20%5BCctools-i18n%5D%20ccPublisher%20in%20Dutch&In-Reply-To=%3C44C51BA3.6000402%40creativecommons.org%3E"
+       TITLE="[Cctools-i18n] ccPublisher in Dutch">nathan at creativecommons.org
+       </A><BR>
+    <I>Mon Jul 24 21:12:35 CEST 2006</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000031.html">[Cctools-i18n] [cc-devel] ccPublisher in Dutch
+</A></li>
+        <LI>Next message: <A HREF="000032.html">[Cctools-i18n] ccPublisher in Dutch
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#30">[ date ]</a>
+              <a href="thread.html#30">[ thread ]</a>
+              <a href="subject.html#30">[ subject ]</a>
+              <a href="author.html#30">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>&gt;<i> 
+</I>&gt;<i> 1) Quite a few strings are being used multiple times, so I had to
+</I>&gt;<i> translate them multiple times. Is this a feature or a bug ;) ?
+</I>
+It's a bug.  Something that needs to be done before the 2.4 release is a
+normalization of the strings.  I've opened an issue for that in the
+tracker (<A HREF="http://roundup.creativecommons.org/ccpublisher/issue43">http://roundup.creativecommons.org/ccpublisher/issue43</A>).
+
+&gt;<i> 
+</I>&gt;<i> 2) Maybe its just me, but some of the English text is kinda cryptic or
+</I>&gt;<i> 'doesn't feel right'. Such as:
+</I>&gt;<i> 
+</I>&gt;<i> - &quot;That identifier does not conform to the Internet Archive's naming
+</I>&gt;<i> standards.&quot;
+</I>&gt;<i> 
+</I>&gt;<i> Shouldn't that be changed to this?
+</I>&gt;<i> 
+</I>&gt;<i> - &quot;That identifier is not available.&quot;
+</I>
+The problem is that the first message is actually more accurate -- it
+doesn't matter if identifiers which contain spaces, are less than 5
+characters or more than 100 characters are available are not -- they
+don't meet IA's naming standards.  That said, I can see how the message
+is confusing.  Is it inaccurate to say that the identifier is
+unavailable when it doesn't meet standards?  Do we need two different
+messages perhaps (ie, &quot;not available&quot; and &quot;identifiers can not contain
+...&quot;)?
+
+&gt;<i> 
+</I>&gt;<i> Same here.
+</I>&gt;<i> 
+</I>&gt;<i> - &quot;The interfaces which metadata applies to.&quot;
+</I>
+This crept in from the developer strings and shouldn't be in the files.
+ Removing it is included in the issue mentioned above.
+
+&gt;<i> 
+</I>&gt;<i> I have no clue what this means....
+</I>&gt;<i> 
+</I>&gt;<i> 3) I discovered a small typo:
+</I>&gt;<i> 
+</I>&gt;<i> - &quot;ccPublisher has assembled a suggested identifier based on the
+</I>&gt;<i> metadata you provided. Identifiers must be at least five characters long
+</I>&gt;<i> and may contains(...)&quot;
+</I>&gt;<i> 
+</I>&gt;<i> Typo: contains should be contain
+</I>
+Thanks; also added to the issue.
+
+
+&gt;<i> 
+</I>&gt;<i> 
+</I>&gt;<i> BTW, how can the average ccPublisher user download a Dutch version of
+</I>&gt;<i> ccPublisher?
+</I>&gt;<i> 
+</I>&gt;<i> I mean, I can swap the EN .PO files for the NL files, but I think that
+</I>&gt;<i> this might be too much to ask from an average user. Are we going to
+</I>&gt;<i> include all the *.PO files and create a multilingual version or are
+</I>&gt;<i> there other ideas on how to solve this?
+</I>&gt;<i> 
+</I>&gt;<i> All the best,
+</I>&gt;<i> 
+</I>&gt;<i> grtz
+</I>&gt;<i> BjornW
+</I>
+
+-- 
+Nathan R. Yergler
+Software Engineer
+Creative Commons
+
+<A HREF="http://wiki.creativecommons.org/User:NathanYergler">http://wiki.creativecommons.org/User:NathanYergler</A>
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000031.html">[Cctools-i18n] [cc-devel] ccPublisher in Dutch
+</A></li>
+	<LI>Next message: <A HREF="000032.html">[Cctools-i18n] ccPublisher in Dutch
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#30">[ date ]</a>
+              <a href="thread.html#30">[ thread ]</a>
+              <a href="subject.html#30">[ subject ]</a>
+              <a href="author.html#30">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/cctools-i18n">More information about the cctools-i18n
+mailing list</a><br>
+</body></html>

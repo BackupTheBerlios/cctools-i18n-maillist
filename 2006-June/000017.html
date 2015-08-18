@@ -1,0 +1,111 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Cctools-i18n] State of ccPublisher i18n
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/cctools-i18n/2006-June/index.html" >
+   <LINK REL="made" HREF="mailto:cctools-i18n%40lists.berlios.de?Subject=Re%3A%20%5BCctools-i18n%5D%20State%20of%20ccPublisher%20i18n&In-Reply-To=%3C449698E8.8020405%40creativecommons.org%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000016.html">
+   <LINK REL="Next"  HREF="000018.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Cctools-i18n] State of ccPublisher i18n</H1>
+    <B>Nathan R. Yergler</B> 
+    <A HREF="mailto:cctools-i18n%40lists.berlios.de?Subject=Re%3A%20%5BCctools-i18n%5D%20State%20of%20ccPublisher%20i18n&In-Reply-To=%3C449698E8.8020405%40creativecommons.org%3E"
+       TITLE="[Cctools-i18n] State of ccPublisher i18n">nathan at creativecommons.org
+       </A><BR>
+    <I>Mon Jun 19 14:30:32 CEST 2006</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000016.html">[Cctools-i18n] Re: another issue: Public Domai.n
+</A></li>
+        <LI>Next message: <A HREF="000018.html">[Cctools-i18n] ccPublisher 2.1.3 (2.2 Release Candidate)
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#17">[ date ]</a>
+              <a href="thread.html#17">[ thread ]</a>
+              <a href="subject.html#17">[ subject ]</a>
+              <a href="author.html#17">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>I'd like to thank everyone for all the bug reports and hard work with
+translations over the past week while I've been away on holiday.  I
+wanted to let everyone know where we are with the ccPublisher 2.2
+release, in particular internationalization.
+
+Several of you have pointed out that there were a few remaining strings
+missing from the catalog templates, or that strings in the catalog
+weren't being rendered properly.  Both of those issues have been
+corrected.  I have attached the updated .pot files to this message;
+they're also available from Subversion (or through the web at
+<A HREF="http://svn.berlios.de/viewcvs/cctools/publisher/trunk/resources/locale/">http://svn.berlios.de/viewcvs/cctools/publisher/trunk/resources/locale/</A>).
+
+An issue with right-to-left language rendering was also reported.
+Unfortunately we've found that ccPublisher's underlying toolkit,
+wxWidgets, does not yet properly support RTL rendering.  We're exploring
+ways to handle RTL, but RTL language support will not be in 2.2.
+
+I'm currently working on some network communication issues for
+ccPublisher 2.2 (catching exceptions, etc).  We'll be pushing out an
+updated beta release later this evening which will include the bug
+fixes, updated catalogs and any translation files I've received to this
+point.  As a reminder, a complete translation includes two .po files
+(ccpublisher.po and p6.po) and one .html file (welcome.html).
+Translations received by 1600 UTC tomorrow (20 June 2006) will be
+included in the initial 2.2 release.  Those received after that point
+will be rolled into the first bug fix release.
+
+Thanks again to everyone for their hard work.
+
+Nathan
+
+-- 
+Nathan R. Yergler
+Software Engineer
+Creative Commons
+
+<A HREF="http://wiki.creativecommons.org/User:NathanYergler">http://wiki.creativecommons.org/User:NathanYergler</A>
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: ccpublisher.pot
+Type: application/vnd.ms-powerpoint
+Size: 6959 bytes
+Desc: not available
+URL: &lt;<A HREF="https://lists.berlios.de/pipermail/cctools-i18n/attachments/20060619/ae6aac03/attachment.pot">https://lists.berlios.de/pipermail/cctools-i18n/attachments/20060619/ae6aac03/attachment.pot</A>&gt;
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: p6.pot
+Type: application/vnd.ms-powerpoint
+Size: 2986 bytes
+Desc: not available
+URL: &lt;<A HREF="https://lists.berlios.de/pipermail/cctools-i18n/attachments/20060619/ae6aac03/attachment-0001.pot">https://lists.berlios.de/pipermail/cctools-i18n/attachments/20060619/ae6aac03/attachment-0001.pot</A>&gt;
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000016.html">[Cctools-i18n] Re: another issue: Public Domai.n
+</A></li>
+	<LI>Next message: <A HREF="000018.html">[Cctools-i18n] ccPublisher 2.1.3 (2.2 Release Candidate)
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#17">[ date ]</a>
+              <a href="thread.html#17">[ thread ]</a>
+              <a href="subject.html#17">[ subject ]</a>
+              <a href="author.html#17">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/cctools-i18n">More information about the cctools-i18n
+mailing list</a><br>
+</body></html>

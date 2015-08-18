@@ -1,0 +1,135 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Cctools-i18n] ccPublisher in Dutch
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/cctools-i18n/2006-July/index.html" >
+   <LINK REL="made" HREF="mailto:cctools-i18n%40lists.berlios.de?Subject=Re%3A%20%5BCctools-i18n%5D%20ccPublisher%20in%20Dutch&In-Reply-To=%3C44C6013A.9080709%40bdisfunctional.net%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000030.html">
+   <LINK REL="Next"  HREF="000033.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Cctools-i18n] ccPublisher in Dutch</H1>
+    <B>Bjorn Wijers</B> 
+    <A HREF="mailto:cctools-i18n%40lists.berlios.de?Subject=Re%3A%20%5BCctools-i18n%5D%20ccPublisher%20in%20Dutch&In-Reply-To=%3C44C6013A.9080709%40bdisfunctional.net%3E"
+       TITLE="[Cctools-i18n] ccPublisher in Dutch">mailings at bdisfunctional.net
+       </A><BR>
+    <I>Tue Jul 25 13:32:10 CEST 2006</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000030.html">[Cctools-i18n] ccPublisher in Dutch
+</A></li>
+        <LI>Next message: <A HREF="000033.html">[Cctools-i18n] ccPublisher in Dutch
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#32">[ date ]</a>
+              <a href="thread.html#32">[ thread ]</a>
+              <a href="subject.html#32">[ subject ]</a>
+              <a href="author.html#32">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>&gt;&gt;<i> 1) Quite a few strings are being used multiple times, so I had to
+</I>&gt;&gt;<i> translate them multiple times. Is this a feature or a bug ;) ?
+</I>&gt;<i> 
+</I>&gt;<i> It's a bug.  Something that needs to be done before the 2.4 release is a
+</I>&gt;<i> normalization of the strings.  I've opened an issue for that in the
+</I>&gt;<i> tracker (<A HREF="http://roundup.creativecommons.org/ccpublisher/issue43">http://roundup.creativecommons.org/ccpublisher/issue43</A>).
+</I>
+
+Can Pootle assist in this? Maybe we should contact Dwayne about this, 
+'cause it would be a killer feature for Pootle to find the dupes instead 
+of us grepping the *.po files :)
+
+
+&gt;&gt;<i> 2) Maybe its just me, but some of the English text is kinda cryptic or
+</I>&gt;&gt;<i> 'doesn't feel right'. Such as:
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> - &quot;That identifier does not conform to the Internet Archive's naming
+</I>&gt;&gt;<i> standards.&quot;
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> Shouldn't that be changed to this?
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> - &quot;That identifier is not available.&quot;
+</I>&gt;<i> 
+</I>&gt;<i> The problem is that the first message is actually more accurate -- it
+</I>&gt;<i> doesn't matter if identifiers which contain spaces, are less than 5
+</I>&gt;<i> characters or more than 100 characters are available are not -- they
+</I>&gt;<i> don't meet IA's naming standards.  That said, I can see how the message
+</I>&gt;<i> is confusing.  Is it inaccurate to say that the identifier is
+</I>&gt;<i> unavailable when it doesn't meet standards?  Do we need two different
+</I>&gt;<i> messages perhaps (ie, &quot;not available&quot; and &quot;identifiers can not contain
+</I>&gt;<i> ...&quot;)?
+</I>
+I would suggest to have two messages. It's more clear for the user what 
+exactly the problem is and we can add a solution to the each specific 
+error message in the documentation.
+
+
+&gt;&gt;&gt;<i> BTW, how can the average ccPublisher user download a Dutch version of 
+</I>&gt;&gt;&gt;<i> &gt;&gt; ccPublisher?
+</I>&gt;&gt;&gt;<i> &gt;&gt;
+</I>&gt;&gt;<i> &gt; 
+</I>&gt;&gt;<i> &gt; I believe the average user will have to wait for a point release that
+</I>&gt;&gt;<i> &gt; includes new translations.  
+</I>&gt;&gt;<i> &gt; 
+</I>&gt;<i> 
+</I>&gt;<i> Unfortunately that is currently the case.  We're trying to do a major
+</I>&gt;<i> release (i.e., 2.0, 2.2, etc) every 2-4 months and bug fix releases as
+</I>&gt;<i> needed to minimize the lag, but it does exist.
+</I>&gt;<i> 
+</I>&gt;<i> There are a couple of ideas we're looking at that will help eliminate
+</I>&gt;<i> this -- one is downloaded &quot;language packs&quot; for the application
+</I>&gt;<i> (downloaded by ccPublisher itself so no user intervention required, only
+</I>&gt;<i> permission).
+</I>&gt;<i> 
+</I>&gt;<i> The other is getting the process of &quot;releasing&quot; down to a science so
+</I>&gt;<i> that it's trivial to make a release.  Part of this would involve
+</I>&gt;<i> starting to do nightly builds where an automated system checked out the
+</I>&gt;<i> code, ran the tests and built packages, hopefully on multiple platforms.
+</I>&gt;<i>  Once that was in place, providing &quot;unofficial&quot; builds with the updated
+</I>&gt;<i> translations would be trivial, and new &quot;official&quot; releases on slightly
+</I>&gt;<i> less so.
+</I>&gt;<i> 
+</I>&gt;<i> So those are the two ideas we're kicking around, and we may end up doing
+</I>&gt;<i> both.  Unfortunately I don't have any sort of time line for either.  If
+</I>&gt;<i> you have feedback or suggestions, I'd love to hear them.
+</I>
+Mhhm, both solutions need some time from us -developers- to develop, so 
+I would like to add a third option of creating a small howto in swapping 
+*.po files so people interested in helping out can act as the &quot;automated 
+system&quot; for now and distribute localized versions of ccPublisher 
+independant of CC. What do you think?
+
+grtz
+BjornW
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000030.html">[Cctools-i18n] ccPublisher in Dutch
+</A></li>
+	<LI>Next message: <A HREF="000033.html">[Cctools-i18n] ccPublisher in Dutch
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#32">[ date ]</a>
+              <a href="thread.html#32">[ thread ]</a>
+              <a href="subject.html#32">[ subject ]</a>
+              <a href="author.html#32">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/cctools-i18n">More information about the cctools-i18n
+mailing list</a><br>
+</body></html>
